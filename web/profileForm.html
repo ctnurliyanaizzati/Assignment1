@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Personal Profile</title>
+    <style>
+        /* Simple, presentable CSS */
+        body { font-family: 'Verdana', sans-serif; background-color: #f0f8ff; color: #333; margin: 20px; }
+        .container { max-width: 650px; margin: auto; background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 6px 15px rgba(0,0,0,0.15); border-top: 5px solid #007bff; }
+        h2 { color: #007bff; text-align: center; margin-bottom: 25px;}
+        label { display: block; margin-top: 15px; font-weight: bold; color: #555; }
+        input[type="text"], input[type="email"], textarea { width: 100%; padding: 12px; margin-top: 5px; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; }
+        textarea { resize: vertical; height: 100px; }
+        input[type="submit"] { background-color: #28a745; color: white; padding: 12px 20px; border: none; border-radius: 6px; cursor: pointer; margin-top: 30px; width: 100%; font-size: 18px; transition: background-color 0.3s; }
+        input[type="submit"]:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>My Personal Profile</h2>
+    <form action="ProfileServlet" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId" required>
+
+        <label for="program">Program:</label>
+        <input type="text" id="program" name="program" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="hobbies">Hobbies (Comma Separated):</label>
+        <input type="text" id="hobbies" name="hobbies">
+
+        <label for="intro">Short Self-Introduction:</label>
+        <textarea id="intro" name="intro" required></textarea>
+
+        <input type="submit" value="Generate Profile">
+    </form>
+</div>
+</body>
+</html>
