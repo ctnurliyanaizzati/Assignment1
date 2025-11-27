@@ -4,7 +4,6 @@
 <head>
     <title>${profileName}'s Profile</title>
     <style>
-        /* CSS for a neat and creative display */
         body { font-family: 'Roboto', sans-serif; background-color: #e6f7ff; color: #333; margin: 0; padding: 20px;}
         .profile-card { max-width: 800px; margin: 30px auto; background: #ffffff; padding: 40px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); border: 1px solid #ddd;}
         h1 { color: #0056b3; text-align: center; margin-bottom: 5px; border-bottom: 3px solid #0056b3; padding-bottom: 10px; }
@@ -21,7 +20,6 @@
 
 <div class="profile-card">
     <h1>Profile for ${profileName}</h1>
-    <p class="subtitle">🎉 Generated Successfully! 🎉</p>
 
     <div class="data-item">
         <span class="data-label">Student Name</span> 
