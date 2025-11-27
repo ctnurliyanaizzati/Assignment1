@@ -22,7 +22,7 @@
     <h1>Profile for ${profileName}</h1>
 
     <div class="data-item">
-        <span class="data-label">Student Name</span> 
+        <span class="data-label">Student Name:</span> 
         <span class="data-value">${profileName}</span>
     </div>
     
